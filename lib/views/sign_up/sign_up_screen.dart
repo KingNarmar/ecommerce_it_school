@@ -10,18 +10,21 @@ class SignUpScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        appBar: AppBar(),
         body: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              const CustomAppBar(text: "Sign Up"),
-              SizedBox(
-                height: MediaQuery.sizeOf(context).height * 0.089901478,
-              ),
-              const ParameterSection(),
-              const SocialMediaSection(),
-            ],
+          child: SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const CustomAppBar(text: "Sign Up"),
+                SizedBox(
+                  height: MediaQuery.sizeOf(context).height * 0.089901478,
+                ),
+                const ParameterSection(),
+                const SocialMediaSection(),
+              ],
+            ),
           ),
         ),
       ),

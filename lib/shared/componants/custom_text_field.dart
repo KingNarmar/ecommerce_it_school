@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 class CustomTextField extends StatelessWidget {
   const CustomTextField({
     super.key,
-    this.hintText,
+    this.labelText,
   });
-  final String? hintText;
+  final String? labelText;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -20,8 +20,8 @@ class CustomTextField extends StatelessWidget {
       ]),
       child: TextFormField(
         decoration: InputDecoration(
-          hintText: hintText,
-          floatingLabelAlignment: FloatingLabelAlignment.center,
+          labelText: labelText,
+          floatingLabelAlignment: FloatingLabelAlignment.start,
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(4),
             borderSide: BorderSide.none,

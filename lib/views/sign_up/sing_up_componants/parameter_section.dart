@@ -12,18 +12,18 @@ class ParameterSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const CustomTextField(hintText: "Name"),
+        const CustomTextField(labelText: "Name"),
         SizedBox(
           height: MediaQuery.sizeOf(context).height * 0.009852217,
         ),
         const CustomTextField(
-          hintText: "Email",
+          labelText: "Email",
         ),
         SizedBox(
           height: MediaQuery.sizeOf(context).height * 0.009852217,
         ),
         const CustomTextField(
-          hintText: "Password",
+          labelText: "Password",
         ),
         SizedBox(
           height: MediaQuery.sizeOf(context).height * 0.019704433,

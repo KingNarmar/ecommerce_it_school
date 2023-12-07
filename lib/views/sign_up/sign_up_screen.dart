@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../shared/componants/custom_app_bar.dart';
-import 'sing_up_componants/parameter_section.dart';
-import 'sing_up_componants/socila_media_section.dart';
+import 'sing_up_componants/sign_up_parameter_section.dart';
+import 'sing_up_componants/sign_up_socila_media_section.dart';
 
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({super.key});
@@ -21,8 +21,8 @@ class SignUpScreen extends StatelessWidget {
                 SizedBox(
                   height: MediaQuery.sizeOf(context).height * 0.089901478,
                 ),
-                const ParameterSection(),
-                const SocialMediaSection(),
+                const SignUpParameterSection(),
+                const SignUpSocialMediaSection(),
               ],
             ),
           ),

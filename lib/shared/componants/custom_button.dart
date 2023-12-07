@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 class CustomButton extends StatelessWidget {
   const CustomButton({
     super.key,
-    this.child,
+    required this.child,
   });
-  final String? child;
+  final String child;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -19,7 +19,7 @@ class CustomButton extends StatelessWidget {
       ),
       child: Center(
         child: Text(
-          child!,
+          child,
           style: const TextStyle(
             color: Colors.white,
             fontSize: 14,

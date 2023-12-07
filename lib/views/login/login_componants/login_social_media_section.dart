@@ -1,3 +1,4 @@
+import 'package:ecommerce_it_school/shared/constants/constants.dart';
 import 'package:flutter/material.dart';
 
 import '../../../shared/componants/custom_container_for_social_icons.dart';
@@ -21,7 +22,7 @@ class LoginSocialMediaSection extends StatelessWidget {
             style: TextStyle(
               color: Color(0xFF222222),
               fontSize: 14,
-              fontFamily: 'Metropolis',
+              fontFamily: metropolisFontFamiely,
               fontWeight: FontWeight.w500,
               height: 0.10,
             ),
@@ -34,10 +35,10 @@ class LoginSocialMediaSection extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             CustomContainerForSocialIcons(
-              iconPath: "assets/images/googleIcon.png",
+              iconPath: googleIcon,
             ),
             CustomContainerForSocialIcons(
-              iconPath: "assets/images/facebookIcon.png",
+              iconPath: facebookIcon,
             )
           ],
         ),

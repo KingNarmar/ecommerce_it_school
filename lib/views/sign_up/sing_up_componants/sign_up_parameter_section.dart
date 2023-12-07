@@ -1,3 +1,4 @@
+import 'package:ecommerce_it_school/shared/constants/constants.dart';
 import 'package:ecommerce_it_school/views/login/login_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -46,7 +47,7 @@ class SignUpParameterSection extends StatelessWidget {
                 style: TextStyle(
                   color: Color(0xFF222222),
                   fontSize: 14,
-                  fontFamily: 'Metropolis',
+                  fontFamily: metropolisFontFamiely,
                   fontWeight: FontWeight.w600,
                 ),
               ),

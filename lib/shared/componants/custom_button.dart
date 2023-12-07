@@ -1,11 +1,16 @@
+import 'package:ecommerce_it_school/shared/constants/constants.dart';
 import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget {
   const CustomButton({
     super.key,
     required this.child,
+    this.color = const Color(0xFFDB3022),
+    this.side = BorderSide.none,
   });
   final String child;
+  final Color? color;
+  final BorderSide side;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -13,9 +18,8 @@ class CustomButton extends StatelessWidget {
       height: MediaQuery.sizeOf(context).height * 0.0591133,
       decoration: ShapeDecoration(
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(25),
-        ),
-        color: const Color(0xFFDB3022),
+            borderRadius: BorderRadius.circular(25), side: side),
+        color: color,
       ),
       child: Center(
         child: Text(
@@ -23,7 +27,7 @@ class CustomButton extends StatelessWidget {
           style: const TextStyle(
             color: Colors.white,
             fontSize: 14,
-            fontFamily: 'Metropolis',
+            fontFamily: metropolisFontFamiely,
             fontWeight: FontWeight.w500,
           ),
         ),

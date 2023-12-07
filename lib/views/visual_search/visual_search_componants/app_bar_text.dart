@@ -1,21 +1,20 @@
 import 'package:ecommerce_it_school/shared/constants/constants.dart';
 import 'package:flutter/material.dart';
 
-class CustomAppBar extends StatelessWidget {
-  const CustomAppBar({
+class AppBarText extends StatelessWidget {
+  const AppBarText({
     super.key,
-    this.text,
   });
-  final String? text;
+
   @override
   Widget build(BuildContext context) {
-    return Text(
-      text!,
-      style: const TextStyle(
+    return const Text(
+      "Visual search",
+      style: TextStyle(
         color: Color(0xFF222222),
-        fontSize: 34,
+        fontSize: 18,
         fontFamily: metropolisFontFamiely,
-        fontWeight: FontWeight.w900,
+        fontWeight: FontWeight.w700,
       ),
     );
   }

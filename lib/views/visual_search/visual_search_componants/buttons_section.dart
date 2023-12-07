@@ -1,24 +1,46 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
 
 import '../../../shared/componants/custom_button.dart';
 
-class ButtonsSection extends StatelessWidget {
+class ButtonsSection extends StatefulWidget {
   const ButtonsSection({
     super.key,
   });
 
   @override
+  State<ButtonsSection> createState() => _ButtonsSectionState();
+}
+
+class _ButtonsSectionState extends State<ButtonsSection> {
+  File? image;
+  ImagePicker picker = ImagePicker();
+
+  @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const CustomButton(child: "TAKE A PHOTO"),
+        CustomButton(
+            child: "TAKE A PHOTO",
+            onTap: () async {
+              final XFile? file =
+                  await picker.pickImage(source: ImageSource.camera);
+              image = File(file!.path);
+            }),
         SizedBox(
           height: MediaQuery.sizeOf(context).height * 0.019704433,
         ),
-        const CustomButton(
+        CustomButton(
           child: "UPLOAD AN IMAGE",
           color: Colors.transparent,
-          side: BorderSide(color: Colors.white),
+          side: const BorderSide(color: Colors.white),
+          onTap: () async {
+            final XFile? file =
+                await picker.pickImage(source: ImageSource.gallery);
+            image = File(file!.path);
+          },
         ),
       ],
     );

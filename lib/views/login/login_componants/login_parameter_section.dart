@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../shared/componants/custom_button.dart';
 import '../../../shared/componants/custom_text_field.dart';
+import '../../forgot_password/forgot_password_screen.dart';
 
 class LoginParameterSection extends StatelessWidget {
   const LoginParameterSection({
@@ -32,7 +33,7 @@ class LoginParameterSection extends StatelessWidget {
             Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => ForgotPasswordScreen(),
+                  builder: (context) => const ForgotPasswordScreen(),
                 ));
           },
           child: const Row(

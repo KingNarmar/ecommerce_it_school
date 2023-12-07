@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class CustomTextFieldSingUp extends StatelessWidget {
-  const CustomTextFieldSingUp({
+class CustomTextField extends StatelessWidget {
+  const CustomTextField({
     super.key,
     this.hintText,
   });

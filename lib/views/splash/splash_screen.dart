@@ -10,7 +10,7 @@ class SpalshScreen extends StatelessWidget {
     Future.delayed(
       const Duration(seconds: 3),
       () {
-        Navigator.pushReplacement(
+        Navigator.push(
             context,
             MaterialPageRoute(
               builder: (context) => const SignUpScreen(),

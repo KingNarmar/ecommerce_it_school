@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'views/visual_search/visual_search_screen.dart';
+import 'views/home/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(useMaterial3: true),
-      home: const VisualSearchScreen(),
+      home: const HomeScreen(),
     );
   }
 }

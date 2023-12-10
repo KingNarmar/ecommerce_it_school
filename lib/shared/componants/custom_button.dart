@@ -8,17 +8,19 @@ class CustomButton extends StatelessWidget {
     this.color = const Color(0xFFDB3022),
     this.side = BorderSide.none,
     this.onTap,
+    this.width = double.infinity,
   });
   final String child;
   final Color? color;
   final BorderSide side;
   final void Function()? onTap;
+  final double width;
   @override
   Widget build(BuildContext context) {
     return InkWell(
       onTap: onTap,
       child: Container(
-        width: double.infinity,
+        width: width,
         height: MediaQuery.sizeOf(context).height * 0.0591133,
         decoration: ShapeDecoration(
           shape: RoundedRectangleBorder(

@@ -22,7 +22,10 @@ class SpalshScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Icon(Icons.category),
+            Icon(
+              Icons.category,
+              size: 40,
+            ),
             CircularProgressIndicator(),
           ],
         ),

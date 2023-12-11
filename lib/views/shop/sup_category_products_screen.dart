@@ -3,6 +3,7 @@ import 'package:ecommerce_it_school/views/shop/shop_componants/sup_category_prod
 import 'package:flutter/material.dart';
 
 import 'shop_componants/sup_category_products_screen_filters_section.dart';
+import 'shop_componants/sup_category_products_screen_list_builder_section.dart';
 import 'shop_componants/sup_category_products_screen_top_list_builder.dart';
 
 class SupCategoryProductsScreen extends StatelessWidget {
@@ -20,22 +21,21 @@ class SupCategoryProductsScreen extends StatelessWidget {
         ],
       ),
       body: SingleChildScrollView(
-          child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            SupCategoryProductsScreenHeaderSection(
-              supCategoryModel: supCategoryModel,
-            ),
-            const SupCategoryProductsScreenTopListBuilder(),
-            const SupCategoryProductsScreenFiltersSection(),
-            SizedBox(
-              height: MediaQuery.sizeOf(context).height * 0.012315271,
-            ),
-          ],
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              SupCategoryProductsScreenHeaderSection(
+                supCategoryModel: supCategoryModel,
+              ),
+              const SupCategoryProductsScreenTopListBuilder(),
+              const SupCategoryProductsScreenFiltersSection(),
+              const SupCategoryProductsScreenListBuilderSection()
+            ],
+          ),
         ),
-      )),
+      ),
     );
   }
 }

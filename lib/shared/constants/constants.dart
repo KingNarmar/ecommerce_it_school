@@ -10,3 +10,11 @@ const String accesoriesCategoryImage =
     "assets/images/accesoriesCategoryImage.png";
 const String clothesCategoryImage = "assets/images/clothesCategoryImage.png";
 const String shoesCategoryImage = "assets/images/shoesCategoryImage.png";
+const String supCategoryProductImage1 =
+    "assets/images/supCategoryProductImage1.png";
+const String supCategoryProductImage2 =
+    "assets/images/supCategoryProductImage2.png";
+const String supCategoryProductImage3 =
+    "assets/images/supCategoryProductImage3.png";
+const String supCategoryProductImage4 =
+    "assets/images/supCategoryProductImage4.png";

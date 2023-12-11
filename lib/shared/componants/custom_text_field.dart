@@ -9,15 +9,17 @@ class CustomTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration:
-          const ShapeDecoration(shape: RoundedRectangleBorder(), shadows: [
-        BoxShadow(
-          color: Color(0x0C000000),
-          blurRadius: 8,
-          offset: Offset(0, 1),
-          spreadRadius: 0,
-        )
-      ]),
+      decoration: const ShapeDecoration(
+          shape: RoundedRectangleBorder(),
+          shadows: [
+            BoxShadow(
+              color: Color(0x0C000000),
+              blurRadius: 8,
+              offset: Offset(0, 1),
+              spreadRadius: 0,
+            ),
+          ],
+          color: Colors.white),
       child: TextFormField(
         decoration: InputDecoration(
           labelText: labelText,

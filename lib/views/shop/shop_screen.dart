@@ -22,6 +22,7 @@ class ShopScreen extends StatelessWidget {
         ),
         body: const TabBarView(
           children: [
+            //Women
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 16),
               child: SingleChildScrollView(
@@ -34,7 +35,11 @@ class ShopScreen extends StatelessWidget {
                   ],
                 ),
               ),
-            )
+            ),
+            //Men
+            SingleChildScrollView(),
+            //Kids
+            SingleChildScrollView(),
           ],
         ),
       ),

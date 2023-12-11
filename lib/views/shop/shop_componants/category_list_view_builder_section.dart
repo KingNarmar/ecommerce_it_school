@@ -23,7 +23,7 @@ class CategoryListViewBuilderSection extends StatelessWidget {
             PersistentNavBarNavigator.pushNewScreen(
               context,
               screen: const SubCategoryScreen(),
-              withNavBar: true, // OPTIONAL VALUE. True by default.
+              withNavBar: true,
               pageTransitionAnimation: PageTransitionAnimation.cupertino,
             );
           },

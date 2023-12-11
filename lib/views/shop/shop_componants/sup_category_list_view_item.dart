@@ -7,23 +7,27 @@ class SubCategoryListViewItem extends StatelessWidget {
   const SubCategoryListViewItem({
     super.key,
     required this.supCategoryModel,
+    this.onTap,
   });
   final SupCategoryModel supCategoryModel;
+  final void Function()? onTap;
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16),
-          child: ListTile(
-            title: Text(
+          child: InkWell(
+            onTap: onTap,
+            child: Text(
               supCategoryModel.name,
               style: const TextStyle(
-                color: Color(0xFF222222),
-                fontSize: 16,
-                fontFamily: metropolisFontFamiely,
-                fontWeight: FontWeight.w400,
-              ),
+                  color: Color(0xFF222222),
+                  fontSize: 16,
+                  fontFamily: metropolisFontFamiely,
+                  fontWeight: FontWeight.w500,
+                  height: 2),
             ),
           ),
         ),

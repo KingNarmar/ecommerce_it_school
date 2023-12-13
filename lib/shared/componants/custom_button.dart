@@ -9,12 +9,14 @@ class CustomButton extends StatelessWidget {
     this.side = BorderSide.none,
     this.onTap,
     this.width = double.infinity,
+    this.textColor = Colors.white,
   });
   final String child;
   final Color? color;
   final BorderSide side;
   final void Function()? onTap;
   final double width;
+  final Color? textColor;
   @override
   Widget build(BuildContext context) {
     return InkWell(
@@ -30,8 +32,8 @@ class CustomButton extends StatelessWidget {
         child: Center(
           child: Text(
             child,
-            style: const TextStyle(
-              color: Colors.white,
+            style: TextStyle(
+              color: textColor,
               fontSize: 14,
               fontFamily: metropolisFontFamiely,
               fontWeight: FontWeight.w500,

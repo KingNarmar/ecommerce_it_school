@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 
 class ColorFilterModel {
   final Color color;
+  bool isSelected;
 
-  ColorFilterModel({required this.color});
+  ColorFilterModel({required this.color, this.isSelected = false});
 
   static final List<ColorFilterModel> colorsList = [
     ColorFilterModel(color: const Color(0xFF020202)),

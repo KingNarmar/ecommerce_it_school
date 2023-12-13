@@ -11,7 +11,7 @@ class PriceFilterSction extends StatefulWidget {
 
 class _PriceFilterSctionState extends State<PriceFilterSction> {
   double start = 0;
-  double end = 100;
+  double end = 1000;
   @override
   Widget build(BuildContext context) {
     return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [

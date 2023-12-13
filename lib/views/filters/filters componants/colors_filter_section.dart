@@ -4,11 +4,17 @@ import 'package:flutter/material.dart';
 
 import '../../../shared/constants/constants.dart';
 
-class ColorsFilterSection extends StatelessWidget {
+class ColorsFilterSection extends StatefulWidget {
   const ColorsFilterSection({
     super.key,
   });
 
+  @override
+  State<ColorsFilterSection> createState() => _ColorsFilterSectionState();
+}
+
+class _ColorsFilterSectionState extends State<ColorsFilterSection> {
+  ColorFilterModel? selectedColorFilter;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -50,8 +56,19 @@ class ColorsFilterSection extends StatelessWidget {
                 scrollDirection: Axis.horizontal,
                 itemCount: ColorFilterModel.colorsList.length,
                 itemBuilder: (context, index) {
+                  final colorFilterModel = ColorFilterModel.colorsList[index];
                   return ColorsFilterItem(
-                    colorFilterModel: ColorFilterModel.colorsList[index],
+                    colorFilterModel: colorFilterModel,
+                    isSelected: selectedColorFilter == colorFilterModel,
+                    onTap: () {
+                      setState(() {
+                        if (selectedColorFilter != colorFilterModel) {
+                          selectedColorFilter = colorFilterModel;
+                        } else {
+                          selectedColorFilter = null;
+                        }
+                      });
+                    },
                   );
                 },
               )),

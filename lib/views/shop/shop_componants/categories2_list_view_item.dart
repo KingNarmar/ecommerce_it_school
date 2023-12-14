@@ -1,15 +1,15 @@
-import 'package:ecommerce_it_school/models/sup_category_model.dart';
+import 'package:ecommerce_it_school/models/categories2_model.dart';
 import 'package:flutter/material.dart';
 
 import '../../../shared/constants/constants.dart';
 
-class SubCategoryListViewItem extends StatelessWidget {
-  const SubCategoryListViewItem({
+class Categories2ListViewItem extends StatelessWidget {
+  const Categories2ListViewItem({
     super.key,
     required this.supCategoryModel,
     this.onTap,
   });
-  final SupCategoryModel supCategoryModel;
+  final Categories2Model supCategoryModel;
   final void Function()? onTap;
   @override
   Widget build(BuildContext context) {

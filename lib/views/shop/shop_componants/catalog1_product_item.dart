@@ -1,14 +1,14 @@
-import 'package:ecommerce_it_school/models/sup_category_product_model.dart';
+import 'package:ecommerce_it_school/models/catalog1_product_model.dart';
 import 'package:flutter/material.dart';
 
 import '../../../shared/constants/constants.dart';
 
-class SupCategoryProductScreenProductItem extends StatelessWidget {
-  const SupCategoryProductScreenProductItem({
+class Catalog1ProductItem extends StatelessWidget {
+  const Catalog1ProductItem({
     super.key,
-    required this.supCategoryProductModel,
+    required this.catalog1ProductModel,
   });
-  final SupCategoryProductModel supCategoryProductModel;
+  final Catalog1ProductModel catalog1ProductModel;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -40,7 +40,7 @@ class SupCategoryProductScreenProductItem extends StatelessWidget {
                 child: Row(
                   children: [
                     Image.asset(
-                      supCategoryProductModel.image,
+                      catalog1ProductModel.image,
                       fit: BoxFit.fill,
                       height: double.infinity,
                     ),
@@ -52,7 +52,7 @@ class SupCategoryProductScreenProductItem extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          supCategoryProductModel.name,
+                          catalog1ProductModel.name,
                           style: const TextStyle(
                             color: Color(0xFF222222),
                             fontSize: 16,
@@ -65,7 +65,7 @@ class SupCategoryProductScreenProductItem extends StatelessWidget {
                               MediaQuery.sizeOf(context).height * 0.009852217,
                         ),
                         Text(
-                          supCategoryProductModel.supplier,
+                          catalog1ProductModel.supplier,
                           style: const TextStyle(
                             color: Color(0xFF9B9B9B),
                             fontSize: 11,
@@ -81,7 +81,7 @@ class SupCategoryProductScreenProductItem extends StatelessWidget {
                         Row(
                           children: [
                             for (int i = 0;
-                                i < supCategoryProductModel.numOfStars;
+                                i < catalog1ProductModel.numOfStars;
                                 i++)
                               const Icon(
                                 Icons.star,
@@ -89,7 +89,7 @@ class SupCategoryProductScreenProductItem extends StatelessWidget {
                                 size: 15,
                               ),
                             Text(
-                              "(${supCategoryProductModel.rating})",
+                              "(${catalog1ProductModel.rating})",
                               style: const TextStyle(
                                 color: Color(0xFF9B9B9B),
                                 fontSize: 10,
@@ -104,7 +104,7 @@ class SupCategoryProductScreenProductItem extends StatelessWidget {
                               MediaQuery.sizeOf(context).height * 0.009852217,
                         ),
                         Text(
-                          '${supCategoryProductModel.price}\$',
+                          '${catalog1ProductModel.price}\$',
                           style: const TextStyle(
                             color: Color(0xFF222222),
                             fontSize: 14,

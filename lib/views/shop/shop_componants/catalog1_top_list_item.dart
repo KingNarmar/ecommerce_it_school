@@ -1,8 +1,8 @@
 import 'package:ecommerce_it_school/shared/constants/constants.dart';
 import 'package:flutter/material.dart';
 
-class SupCategoryProductsScreenTopListItem extends StatelessWidget {
-  const SupCategoryProductsScreenTopListItem({
+class Catalog1TopListItem extends StatelessWidget {
+  const Catalog1TopListItem({
     super.key,
     required this.name,
   });

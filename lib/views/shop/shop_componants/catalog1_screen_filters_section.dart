@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../../shared/constants/constants.dart';
 
-class SupCategoryProductsScreenFiltersSection extends StatelessWidget {
-  const SupCategoryProductsScreenFiltersSection({
+class Catalog1ScreenFiltersSection extends StatelessWidget {
+  const Catalog1ScreenFiltersSection({
     super.key,
   });
 

@@ -1,8 +1,8 @@
-import 'package:ecommerce_it_school/views/shop/shop_componants/sup_category_products_screen_top_list_item.dart';
+import 'package:ecommerce_it_school/views/shop/shop_componants/catalog1_top_list_item.dart';
 import 'package:flutter/material.dart';
 
-class SupCategoryProductsScreenTopListBuilder extends StatelessWidget {
-  const SupCategoryProductsScreenTopListBuilder({
+class Catalog1ScreenTopListBuilduerSection extends StatelessWidget {
+  const Catalog1ScreenTopListBuilduerSection({
     super.key,
   });
   final List<String> names = const [
@@ -19,7 +19,7 @@ class SupCategoryProductsScreenTopListBuilder extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         itemCount: 4,
         itemBuilder: (context, index) {
-          return SupCategoryProductsScreenTopListItem(
+          return Catalog1TopListItem(
             name: names[index],
           );
         },

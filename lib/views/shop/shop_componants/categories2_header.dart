@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import '../../../shared/componants/custom_button.dart';
 import '../../../shared/constants/constants.dart';
 
-class SubCategoryHeader extends StatelessWidget {
-  const SubCategoryHeader({
+class Categories2Header extends StatelessWidget {
+  const Categories2Header({
     super.key,
   });
 

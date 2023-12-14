@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-TabBar shopScreenTapBar() {
+TabBar categoriesScreenTapBar() {
   return const TabBar(
     indicatorColor: Color(0xFFDB3022),
     dividerColor: Colors.transparent,

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-AppBar subCategoryAppBar() {
+AppBar categories2AppBar() {
   return AppBar(
     elevation: 2,
     title: const Text(

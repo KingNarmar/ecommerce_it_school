@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-import 'shop_componants/category_list_view_builder_section.dart';
+import 'shop_componants/categories_list_view_builder_section.dart';
 
-import 'shop_componants/shop_screen_tap_bar.dart';
+import 'shop_componants/categories_screen_tap_bar.dart';
 import 'shop_componants/summer_sales_section.dart';
 
-class ShopScreen extends StatelessWidget {
-  const ShopScreen({super.key});
+class CategoriesScreen extends StatelessWidget {
+  const CategoriesScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,10 +15,10 @@ class ShopScreen extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           title: const Text(
-            "Category",
+            "Categories",
           ),
           centerTitle: true,
-          bottom: shopScreenTapBar(),
+          bottom: categoriesScreenTapBar(),
         ),
         body: const TabBarView(
           children: [
@@ -31,7 +31,7 @@ class ShopScreen extends StatelessWidget {
                     //SummerSales Section
                     SummerSalesSection(),
                     //Category List View builder Section
-                    CategoryListViewBuilderSection()
+                    CategoriesListViewBuilderSection()
                   ],
                 ),
               ),

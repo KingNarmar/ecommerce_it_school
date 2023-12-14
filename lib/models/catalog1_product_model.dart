@@ -1,6 +1,6 @@
 import 'package:ecommerce_it_school/shared/constants/constants.dart';
 
-class SupCategoryProductModel {
+class Catalog1ProductModel {
   final String image;
   final String name;
   final String supplier;
@@ -8,7 +8,7 @@ class SupCategoryProductModel {
   final int rating;
   final int price;
 
-  SupCategoryProductModel({
+  Catalog1ProductModel({
     required this.image,
     required this.name,
     required this.supplier,
@@ -17,43 +17,43 @@ class SupCategoryProductModel {
     required this.price,
   });
 
-  static final List<SupCategoryProductModel> supCategoryProductsList = [
-    SupCategoryProductModel(
+  static final List<Catalog1ProductModel> supCategoryProductsList = [
+    Catalog1ProductModel(
         image: supCategoryProductImage1,
         name: "Pullover",
         supplier: "Mango",
         numOfStars: 4,
         rating: 3,
         price: 51),
-    SupCategoryProductModel(
+    Catalog1ProductModel(
         image: supCategoryProductImage2,
         name: "Blouse",
         supplier: "Dorothy Perkins",
         numOfStars: 5,
         rating: 0,
         price: 34),
-    SupCategoryProductModel(
+    Catalog1ProductModel(
         image: supCategoryProductImage3,
         name: "T-shirt",
         supplier: "LOST Ink",
         numOfStars: 5,
         rating: 10,
         price: 12),
-    SupCategoryProductModel(
+    Catalog1ProductModel(
         image: supCategoryProductImage4,
         name: "Shirt",
         supplier: "Topshop",
         numOfStars: 4,
         rating: 3,
         price: 51),
-    SupCategoryProductModel(
+    Catalog1ProductModel(
         image: supCategoryProductImage4,
         name: "Shirt",
         supplier: "Topshop",
         numOfStars: 4,
         rating: 3,
         price: 51),
-    SupCategoryProductModel(
+    Catalog1ProductModel(
         image: supCategoryProductImage4,
         name: "Shirt",
         supplier: "Topshop",

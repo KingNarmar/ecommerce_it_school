@@ -2,7 +2,7 @@ import 'package:ecommerce_it_school/views/bag/bag_screen.dart';
 import 'package:ecommerce_it_school/views/favorites/favorites_screen.dart';
 import 'package:ecommerce_it_school/views/home/home_screen.dart';
 import 'package:ecommerce_it_school/views/profile/profile_screen.dart';
-import 'package:ecommerce_it_school/views/shop/shop_screen.dart';
+import 'package:ecommerce_it_school/views/shop/categories_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
@@ -16,7 +16,7 @@ class BottomNavBarScreen extends StatelessWidget {
   List<Widget> _buildScreens() {
     return [
       const HomeScreen(),
-      const ShopScreen(),
+      const CategoriesScreen(),
       const BagScreen(),
       const FavoritesScreen(),
       const ProfileScreen()

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-import '../../../models/sup_category_model.dart';
+import '../../../models/categories2_model.dart';
 import '../../../shared/constants/constants.dart';
 
-class SupCategoryProductsScreenHeaderSection extends StatelessWidget {
-  const SupCategoryProductsScreenHeaderSection(
+class Catalog1ScreenHeaderSection extends StatelessWidget {
+  const Catalog1ScreenHeaderSection(
       {super.key, required this.supCategoryModel});
-  final SupCategoryModel supCategoryModel;
+  final Categories2Model supCategoryModel;
   @override
   Widget build(BuildContext context) {
     return Column(

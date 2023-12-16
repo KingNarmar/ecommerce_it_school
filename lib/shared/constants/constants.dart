@@ -18,3 +18,5 @@ const String supCategoryProductImage3 =
     "assets/images/supCategoryProductImage3.png";
 const String supCategoryProductImage4 =
     "assets/images/supCategoryProductImage4.png";
+const String catalog2ProductImage1 = "assets/images/catalog2ProductImage1.png";
+const String catalog2ProductImage2 = "assets/images/catalog2ProductImage2.png";

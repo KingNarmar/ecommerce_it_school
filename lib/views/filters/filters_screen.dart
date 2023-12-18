@@ -2,7 +2,7 @@ import 'package:ecommerce_it_school/views/filters/filters%20componants/filters_s
 import 'package:ecommerce_it_school/views/filters/filters%20componants/price_filter_section.dart';
 import 'package:flutter/material.dart';
 
-import 'filters componants/bottom_app_bar_section.dart';
+import '../../shared/componants/bottom_app_bar_section.dart';
 import 'filters componants/brand_filter_section.dart';
 import 'filters componants/category_filter_section.dart';
 import 'filters componants/colors_filter_section.dart';

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../shared/componants/custom_button.dart';
+import 'custom_button.dart';
 
 class BottomAppBarSection extends StatelessWidget {
   const BottomAppBarSection({

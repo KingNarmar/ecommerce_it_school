@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'views/shop/catalog2_screen.dart';
+import 'views/shop/filters_list_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(useMaterial3: true),
-      home: const Catalog2Screen(),
+      home: const FiltersListScreen(),
     );
   }
 }

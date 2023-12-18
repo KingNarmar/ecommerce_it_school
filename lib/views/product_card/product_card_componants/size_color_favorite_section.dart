@@ -1,7 +1,8 @@
-import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart';
 
 import 'custom_favorite_icon.dart';
 import 'product_card_custom_container.dart';
+import 'select_size_buttom_sheet.dart';
 
 class SizeColorFavoriteSection extends StatelessWidget {
   const SizeColorFavoriteSection({
@@ -10,12 +11,17 @@ class SizeColorFavoriteSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
+    return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        ProductCardCustomContainer(text: "Size"),
-        ProductCardCustomContainer(text: "Color"),
-        CustomFavoriteIcon(),
+        ProductCardCustomContainer(
+          text: "Size",
+          onTap: () {
+            selectSizeButtomSheet(context);
+          },
+        ),
+        const ProductCardCustomContainer(text: "Color"),
+        const CustomFavoriteIcon(),
       ],
     );
   }

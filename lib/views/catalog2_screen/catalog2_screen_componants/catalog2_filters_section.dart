@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'catalog1_screen_filters_section.dart';
+import '../../catalog1_screen/catalog1_screen_componants/catalog1_screen_filters_section.dart';
 
 class Catalog2FiltersSection extends StatelessWidget {
   const Catalog2FiltersSection({

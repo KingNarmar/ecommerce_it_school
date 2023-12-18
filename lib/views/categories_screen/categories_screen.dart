@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'shop_componants/categories_list_view_builder_section.dart';
-
-import 'shop_componants/categories_screen_tap_bar.dart';
-import 'shop_componants/summer_sales_section.dart';
+import 'categories_screen_componants/summer_sales_section.dart';
+import 'categories_screen_componants/categories_list_view_builder_section.dart';
+import 'categories_screen_componants/categories_screen_tap_bar.dart';
 
 class CategoriesScreen extends StatelessWidget {
   const CategoriesScreen({super.key});

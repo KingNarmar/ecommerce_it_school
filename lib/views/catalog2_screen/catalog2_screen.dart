@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import 'shop_componants/catalog2_app_bar.dart';
-import 'shop_componants/catalog2_products_grid_view_section.dart';
-import 'shop_componants/catalog2_top_list_view_builder_section.dart';
-import 'shop_componants/filters_and_bottom_sheet_section.dart';
+import '../filters_list_screen/filters_screen_componants/filters_and_bottom_sheet_section.dart';
+import 'catalog2_screen_componants/catalog2_app_bar.dart';
+import 'catalog2_screen_componants/catalog2_products_grid_view_section.dart';
+import 'catalog2_screen_componants/catalog2_top_list_view_builder_section.dart';
 
 class Catalog2Screen extends StatelessWidget {
   const Catalog2Screen({super.key});

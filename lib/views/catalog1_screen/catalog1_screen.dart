@@ -1,10 +1,10 @@
 import 'package:ecommerce_it_school/models/categories2_model.dart';
-import 'package:ecommerce_it_school/views/shop/shop_componants/catalog1_screen_header_section.dart';
+import 'package:ecommerce_it_school/views/catalog1_screen/catalog1_screen_componants/catalog1_screen_list_builder_section.dart';
 import 'package:flutter/material.dart';
 
-import 'shop_componants/catalog1_screen_filters_section.dart';
-import 'shop_componants/catalog1_screen_list_builder_section.dart';
-import 'shop_componants/catalog1_screen_top_list_builder_section.dart';
+import 'catalog1_screen_componants/catalog1_screen_filters_section.dart';
+import 'catalog1_screen_componants/catalog1_screen_header_section.dart';
+import 'catalog1_screen_componants/catalog1_screen_top_list_builder_section.dart';
 
 class Catalog1Screen extends StatelessWidget {
   const Catalog1Screen({

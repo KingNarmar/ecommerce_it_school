@@ -1,9 +1,9 @@
-import 'package:ecommerce_it_school/views/shop/shop_componants/categories2_list_view_item.dart';
-import 'package:ecommerce_it_school/views/shop/catalog1_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
 import '../../../models/categories2_model.dart';
+import '../../catalog1_screen/catalog1_screen.dart';
+import 'categories2_list_view_item.dart';
 
 class Categories2ListViewBuilder extends StatelessWidget {
   const Categories2ListViewBuilder({

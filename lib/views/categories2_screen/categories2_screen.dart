@@ -1,8 +1,8 @@
-import 'package:ecommerce_it_school/views/shop/shop_componants/categories2_list_view_builder.dart';
 import 'package:flutter/material.dart';
 
-import 'shop_componants/categories2_header.dart';
-import 'shop_componants/categories2_app_bar.dart';
+import 'categories2_screen_componants/categories2_app_bar.dart';
+import 'categories2_screen_componants/categories2_header.dart';
+import 'categories2_screen_componants/categories2_list_view_builder.dart';
 
 class Categories2Screen extends StatelessWidget {
   const Categories2Screen({super.key});

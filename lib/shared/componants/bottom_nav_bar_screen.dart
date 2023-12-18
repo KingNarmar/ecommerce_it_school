@@ -2,10 +2,11 @@ import 'package:ecommerce_it_school/views/bag/bag_screen.dart';
 import 'package:ecommerce_it_school/views/favorites/favorites_screen.dart';
 import 'package:ecommerce_it_school/views/home/home_screen.dart';
 import 'package:ecommerce_it_school/views/profile/profile_screen.dart';
-import 'package:ecommerce_it_school/views/shop/categories_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
+
+import '../../views/categories_screen/categories_screen.dart';
 
 class BottomNavBarScreen extends StatelessWidget {
   BottomNavBarScreen({super.key});

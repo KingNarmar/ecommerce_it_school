@@ -16,8 +16,10 @@ class Catalog1ScreenListBuilderSection extends StatelessWidget {
       itemCount: Catalog1ProductModel.supCategoryProductsList.length,
       itemBuilder: (context, index) {
         return Catalog1ProductItem(
-            catalog1ProductModel:
-                Catalog1ProductModel.supCategoryProductsList[index]);
+          catalog1ProductModel:
+              Catalog1ProductModel.supCategoryProductsList[index],
+          onTap: () {},
+        );
       },
     );
   }

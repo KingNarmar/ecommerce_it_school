@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../../../models/bottom_sheet_filter_model.dart';
-import 'bottom_sheet_filter_item.dart';
-import 'catalog2_filters_section.dart';
+import '../../catalog2_screen/catalog2_screen_componants/catalog2_filters_section.dart';
+import '../../catalog2_screen/catalog2_screen_componants/bottom_sheet_filter_item.dart';
 
 class FiltersAndBottomSheetSection extends StatefulWidget {
   const FiltersAndBottomSheetSection({

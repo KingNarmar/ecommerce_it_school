@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'catalog1_screen_top_list_builder_section.dart';
+import '../../catalog1_screen/catalog1_screen_componants/catalog1_screen_top_list_builder_section.dart';
 
 class Catalog2TopListViewBuilderSection extends StatelessWidget {
   const Catalog2TopListViewBuilderSection({

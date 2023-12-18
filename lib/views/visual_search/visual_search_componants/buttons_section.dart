@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:ecommerce_it_school/shared/methods/methods.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 
@@ -23,12 +24,14 @@ class _ButtonsSectionState extends State<ButtonsSection> {
     return Column(
       children: [
         CustomButton(
-            child: "TAKE A PHOTO",
-            onTap: () async {
-              final XFile? file =
-                  await picker.pickImage(source: ImageSource.camera);
-              image = File(file!.path);
-            }),
+          child: "TAKE A PHOTO",
+          onTap: () async {
+            final XFile? file =
+                await picker.pickImage(source: ImageSource.camera);
+            image = File(file!.path);
+          },
+          height: mediaHeight(context, 0.0591133),
+        ),
         SizedBox(
           height: MediaQuery.sizeOf(context).height * 0.019704433,
         ),
@@ -41,6 +44,7 @@ class _ButtonsSectionState extends State<ButtonsSection> {
                 await picker.pickImage(source: ImageSource.gallery);
             image = File(file!.path);
           },
+          height: mediaHeight(context, 0.0591133),
         ),
       ],
     );

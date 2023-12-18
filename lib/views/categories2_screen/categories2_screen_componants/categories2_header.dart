@@ -1,3 +1,4 @@
+import 'package:ecommerce_it_school/shared/methods/methods.dart';
 import 'package:flutter/material.dart';
 
 import '../../../shared/componants/custom_button.dart';
@@ -15,7 +16,8 @@ class Categories2Header extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const CustomButton(child: "VIEW ALL ITEMS"),
+          CustomButton(
+              child: "VIEW ALL ITEMS", height: mediaHeight(context, 0.0591133)),
           SizedBox(
             height: MediaQuery.sizeOf(context).height * 0.019704433,
           ),

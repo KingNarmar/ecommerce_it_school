@@ -1,3 +1,4 @@
+import 'package:ecommerce_it_school/shared/methods/methods.dart';
 import 'package:flutter/material.dart';
 
 import '../../../shared/componants/custom_button.dart';
@@ -38,6 +39,7 @@ class HomePageHeaderSection extends StatelessWidget {
                 CustomButton(
                   child: "Check",
                   width: MediaQuery.sizeOf(context).width * 0.426666667,
+                  height: mediaHeight(context, 0.0591133),
                 )
               ],
             ),

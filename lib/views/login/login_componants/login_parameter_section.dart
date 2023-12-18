@@ -1,4 +1,5 @@
 import 'package:ecommerce_it_school/shared/constants/constants.dart';
+import 'package:ecommerce_it_school/shared/methods/methods.dart';
 import 'package:flutter/material.dart';
 
 import '../../../shared/componants/custom_button.dart';
@@ -56,8 +57,9 @@ class LoginParameterSection extends StatelessWidget {
         SizedBox(
           height: MediaQuery.sizeOf(context).height * 0.039408867,
         ),
-        const CustomButton(
+        CustomButton(
           child: "LOGIN",
+          height: mediaHeight(context, 0.0591133),
         ),
       ],
     );

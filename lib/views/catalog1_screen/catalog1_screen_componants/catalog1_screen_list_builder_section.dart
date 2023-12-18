@@ -1,3 +1,4 @@
+import 'package:ecommerce_it_school/views/product_card/product_card_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../../../models/catalog1_product_model.dart';
@@ -18,7 +19,18 @@ class Catalog1ScreenListBuilderSection extends StatelessWidget {
         return Catalog1ProductItem(
           catalog1ProductModel:
               Catalog1ProductModel.supCategoryProductsList[index],
-          onTap: () {},
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) {
+                  return ProductCardScreen(
+                      productModel:
+                          Catalog1ProductModel.supCategoryProductsList[index]);
+                },
+              ),
+            );
+          },
         );
       },
     );

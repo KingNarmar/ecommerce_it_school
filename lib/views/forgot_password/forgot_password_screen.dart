@@ -2,6 +2,7 @@ import 'package:ecommerce_it_school/shared/componants/custom_app_bar.dart';
 import 'package:ecommerce_it_school/shared/componants/custom_button.dart';
 import 'package:ecommerce_it_school/shared/componants/custom_text_field.dart';
 import 'package:ecommerce_it_school/shared/constants/constants.dart';
+import 'package:ecommerce_it_school/shared/methods/methods.dart';
 import 'package:flutter/material.dart';
 
 class ForgotPasswordScreen extends StatelessWidget {
@@ -41,7 +42,10 @@ class ForgotPasswordScreen extends StatelessWidget {
               SizedBox(
                 height: MediaQuery.sizeOf(context).height * 0.086206897,
               ),
-              const CustomButton(child: "SEND")
+              CustomButton(
+                child: "SEND",
+                height: mediaHeight(context, 0.0591133),
+              )
             ],
           ),
         ),

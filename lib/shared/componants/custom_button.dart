@@ -10,6 +10,7 @@ class CustomButton extends StatelessWidget {
     this.onTap,
     this.width = double.infinity,
     this.textColor = Colors.white,
+    required this.height,
   });
   final String child;
   final Color? color;
@@ -17,13 +18,14 @@ class CustomButton extends StatelessWidget {
   final void Function()? onTap;
   final double width;
   final Color? textColor;
+  final double height;
   @override
   Widget build(BuildContext context) {
     return InkWell(
       onTap: onTap,
       child: Container(
         width: width,
-        height: MediaQuery.sizeOf(context).height * 0.0591133,
+        height: height,
         decoration: ShapeDecoration(
           shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(25), side: side),

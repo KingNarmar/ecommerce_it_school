@@ -1,4 +1,5 @@
 import 'package:ecommerce_it_school/shared/constants/constants.dart';
+import 'package:ecommerce_it_school/shared/methods/methods.dart';
 import 'package:ecommerce_it_school/views/login/login_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -58,7 +59,7 @@ class SignUpParameterSection extends StatelessWidget {
         SizedBox(
           height: MediaQuery.sizeOf(context).height * 0.034482759,
         ),
-        const CustomButton(child: "SIGN UP"),
+        CustomButton(child: "SIGN UP", height: mediaHeight(context, 0.0591133)),
         SizedBox(
           height: MediaQuery.sizeOf(context).height * 0.155172414,
         ),

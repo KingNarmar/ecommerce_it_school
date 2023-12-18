@@ -1,3 +1,4 @@
+import 'package:ecommerce_it_school/shared/methods/methods.dart';
 import 'package:flutter/material.dart';
 
 import 'custom_button.dart';
@@ -22,10 +23,12 @@ class BottomAppBarSection extends StatelessWidget {
             width: 1,
             color: Color(0xFF222222),
           ),
+          height: mediaHeight(context, 0.0591133),
         ),
         CustomButton(
           child: "Apply",
           width: MediaQuery.sizeOf(context).width * 0.426666667,
+          height: mediaHeight(context, 0.0591133),
         )
       ]),
     );

@@ -2,7 +2,7 @@ import 'package:ecommerce_it_school/shared/api/dio_helper.dart';
 import 'package:flutter/material.dart';
 
 import 'shared/helpers/shared_helper.dart';
-import 'views/sign_up/sign_up_screen.dart';
+import 'views/splash/splash_screen.dart';
 
 void main()async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(useMaterial3: true),
-      home:  const SignUpScreen(),
+      home:  const SpalshScreen(),
     );
   }
 }

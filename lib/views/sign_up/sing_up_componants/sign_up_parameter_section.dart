@@ -1,3 +1,5 @@
+import 'package:ecommerce_it_school/shared/api/controllers.dart';
+import 'package:ecommerce_it_school/shared/api/dio_helper.dart';
 import 'package:ecommerce_it_school/shared/constants/constants.dart';
 import 'package:ecommerce_it_school/shared/methods/methods.dart';
 import 'package:ecommerce_it_school/views/login/login_screen.dart';
@@ -7,7 +9,7 @@ import '../../../shared/componants/custom_button.dart';
 import '../../../shared/componants/custom_text_field.dart';
 
 class SignUpParameterSection extends StatelessWidget {
-  const SignUpParameterSection({
+   const SignUpParameterSection({
     super.key,
   });
 
@@ -15,18 +17,20 @@ class SignUpParameterSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const CustomTextField(labelText: "Name"),
+         CustomTextField(labelText: "Name",controller: SignupControllers.nameController),
         SizedBox(
           height: MediaQuery.sizeOf(context).height * 0.009852217,
         ),
-        const CustomTextField(
+         CustomTextField(
           labelText: "Email",
+          controller:SignupControllers.emailController,
         ),
         SizedBox(
           height: MediaQuery.sizeOf(context).height * 0.009852217,
         ),
-        const CustomTextField(
+         CustomTextField(
           labelText: "Password",
+          controller: SignupControllers.passwordController,
         ),
         SizedBox(
           height: MediaQuery.sizeOf(context).height * 0.019704433,
@@ -59,7 +63,9 @@ class SignUpParameterSection extends StatelessWidget {
         SizedBox(
           height: MediaQuery.sizeOf(context).height * 0.034482759,
         ),
-        CustomButton(child: "SIGN UP", height: mediaHeight(context, 0.0591133)),
+        CustomButton(child: "SIGN UP", height: mediaHeight(context, 0.0591133),onTap: () {
+        DioHelper.createAccount(context);
+        },),
         SizedBox(
           height: MediaQuery.sizeOf(context).height * 0.155172414,
         ),

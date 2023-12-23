@@ -35,7 +35,7 @@ class FiltersScreen extends StatelessWidget {
             //Brand Filter Section
             const BrandFilterSection(),
             //bootom App bar Section
-            const BottomAppBarSection()
+             const BottomAppBarSection()
           ],
         ),
       ),

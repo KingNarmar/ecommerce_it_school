@@ -1,7 +1,13 @@
-import 'package:ecommerce_it_school/views/categories_screen/categories_screen.dart';
+import 'package:ecommerce_it_school/shared/api/dio_helper.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+import 'shared/helpers/shared_helper.dart';
+import 'views/sign_up/sign_up_screen.dart';
+
+void main()async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await SharedHelper.init();
+  DioHelper.init();
   runApp(const MyApp());
 }
 
@@ -13,7 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(useMaterial3: true),
-      home: const CategoriesScreen(),
+      home:  const SignUpScreen(),
     );
   }
 }

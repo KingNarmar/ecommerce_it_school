@@ -1,7 +1,10 @@
+
 import 'package:ecommerce_it_school/shared/constants/constants.dart';
 import 'package:ecommerce_it_school/shared/methods/methods.dart';
 import 'package:flutter/material.dart';
 
+import '../../../shared/api/controllers.dart';
+import '../../../shared/api/dio_helper.dart';
 import '../../../shared/componants/custom_button.dart';
 import '../../../shared/componants/custom_text_field.dart';
 import '../../forgot_password/forgot_password_screen.dart';
@@ -18,14 +21,16 @@ class LoginParameterSection extends StatelessWidget {
         SizedBox(
           height: MediaQuery.sizeOf(context).height * 0.089901478,
         ),
-        const CustomTextField(
+          CustomTextField(
           labelText: "Email",
+          controller: LoginControllers.emailController,
         ),
         SizedBox(
           height: MediaQuery.sizeOf(context).height * 0.009852217,
         ),
-        const CustomTextField(
+          CustomTextField(
           labelText: "Password",
+          controller: LoginControllers.passwordController,
         ),
         SizedBox(
           height: MediaQuery.sizeOf(context).height * 0.019704433,
@@ -60,6 +65,9 @@ class LoginParameterSection extends StatelessWidget {
         CustomButton(
           child: "LOGIN",
           height: mediaHeight(context, 0.0591133),
+          onTap: () {
+            DioHelper.login(context);
+          },
         ),
       ],
     );

@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import '../../shared/componants/custom_app_bar.dart';
+
+
 import 'sing_up_componants/sign_up_parameter_section.dart';
 import 'sing_up_componants/sign_up_socila_media_section.dart';
 
 class SignUpScreen extends StatelessWidget {
-  const SignUpScreen({super.key});
+   const SignUpScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +23,7 @@ class SignUpScreen extends StatelessWidget {
                 SizedBox(
                   height: MediaQuery.sizeOf(context).height * 0.089901478,
                 ),
-                const SignUpParameterSection(),
+     const SignUpParameterSection(),
                 const SignUpSocialMediaSection(),
               ],
             ),
